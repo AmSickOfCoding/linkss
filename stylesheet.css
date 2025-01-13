@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#log {
+    padding: 20px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+#input-line {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+}
+
+#input-line::before {
+    content: "> ";
+}
+
+#command-input {
+    flex: 1;
+    border: none;
+    background: none;
+    color: green;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    outline: none;
+}
+
+#anomaly-form {
+    margin: 20px;
+    color: green;
+}
+
+button {
+    margin-top: 10px;
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
